@@ -94,12 +94,14 @@ import java.util.Scanner;
 
             excercise8();
 
+        }
 
+        public static void excercise8() {
             Scanner in = new Scanner(System.in);
 
             System.out.print("Input the year: ");
             int year = in.nextInt();
-                                                // Modulus(%) the remainer operator
+            // Modulus(%) the remainer operator
             boolean x = (year % 4) == 0;        // Is year divisible by 4?
             boolean y = (year % 100) != 0;      // Is year divisible by 100?
             boolean z = ((year % 100 == 0) && (year % 400 == 0));  // is year divisible by 400?
@@ -109,10 +111,6 @@ import java.util.Scanner;
             } else {
                 System.out.println(year + " is not a leap year");
             }
-        }
-
-        public static void excercise8() {
-
         }
     }
     /*
@@ -126,51 +124,50 @@ import java.util.Scanner;
 
                 excercise9();
 
-                int m, n, opt, add, sub, mul; // Enter any two integers as input m, n.
-                double div;
-                Scanner s = new Scanner(System.in);
-                System.out.print("Enter first number:");
-                m = s.nextInt();
-                System.out.print("Enter second number:");
-                n = s.nextInt();
-                while (true) {
-                    System.out.println("Enter 1 for addition");
-                    System.out.println("Enter 2 for subtraction");
-                    System.out.println("Enter 3 for multiplication");
-                    System.out.println("Enter 4 for division");
-                    System.out.println("Enter 5 to Exit");
-                    opt = s.nextInt();
-                    switch (opt) {
-                        case 1:
-                            add = m + n;
-                            System.out.println("Result:" + add);
-                            break;
-
-                        case 2:
-                            sub = m - n;
-                            System.out.println("Result:" + sub);
-                            break;
-
-                        case 3:
-                            mul = m * n;
-                            System.out.println("Result:" + mul);
-                            break;
-
-                        case 4:
-                            div = (double) m / n;
-                            System.out.println("Result:" + div);
-                            break;
-
-                        case 5:
-                            System.exit(0);
-                    }
-                    break;
-
-                }
-        }
+              }
 
         public static void excercise9() {
+            int m, n, opt, add, sub, mul; // Enter any two integers as input m, n.
+            double div;
+            Scanner s = new Scanner(System.in);
+            System.out.print("Enter first number:");
+            m = s.nextInt();
+            System.out.print("Enter second number:");
+            n = s.nextInt();
+            while (true) {
+                System.out.println("Enter 1 for addition");
+                System.out.println("Enter 2 for subtraction");
+                System.out.println("Enter 3 for multiplication");
+                System.out.println("Enter 4 for division");
+                System.out.println("Enter 5 to Exit");
+                opt = s.nextInt();
+                switch (opt) {
+                    case 1:
+                        add = m + n;
+                        System.out.println("Result:" + add);
+                        break;
 
+                    case 2:
+                        sub = m - n;
+                        System.out.println("Result:" + sub);
+                        break;
+
+                    case 3:
+                        mul = m * n;
+                        System.out.println("Result:" + mul);
+                        break;
+
+                    case 4:
+                        div = (double) m / n;
+                        System.out.println("Result:" + div);
+                        break;
+
+                    case 5:
+                        System.exit(0);
+                }
+                break;
+
+            }
         }
     }
 // 4. Write a Java program that prints the average of three numbers
@@ -181,6 +178,10 @@ import java.util.Scanner;
 
                 excercise10();
 
+
+            }
+
+            public static void excercise10() {
                 Scanner in = new Scanner(System.in);
                 System.out.print("Input the first number: ");
                 double x = in.nextDouble();
@@ -190,14 +191,11 @@ import java.util.Scanner;
                 double z = in.nextDouble();
                 System.out.print("The average value is " + average(x, y, z)+"\n" );
 
-                } // End of main
+            } // End of main
 
             public static double average(double x, double y, double z)
             {
                 return (x + y + z) / 3;
-            }
-
-            public static void excercise10() {
             }
         } // End of class
 
@@ -210,6 +208,10 @@ class input4 {  // Program that asks you to input your name and store it in a va
         excercise11();
 
 
+
+    }
+
+    public static void excercise11() {
         Scanner user_input = new Scanner( System.in ); // Get input name from user
         String first_name;
         System.out.print("Enter your first name: ");
@@ -224,10 +226,6 @@ class input4 {  // Program that asks you to input your name and store it in a va
 
         System.out.println("Hello " + full_name);
     }
-
-    public static void excercise11() {
-
-    }
 }
 
 
@@ -239,6 +237,11 @@ class input5 {
 
         excercise12();
 
+
+
+            } //End main
+
+    public static void excercise12() {
         Scanner in = new Scanner(System.in);
         System.out.print("Input the first number: ");
         double num1 = in.nextDouble();
@@ -254,11 +257,6 @@ class input5 {
         System.out.println(num1 + " x " + num2 + " = " + (num1 * num2));
 
         System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
-
-            } //End main
-
-    public static void excercise12() {
-
     }
 } // End class
 
@@ -273,6 +271,13 @@ Expected output: 23:59:59
 
                        excercise13();
 
+
+
+                           } //End main
+
+
+
+                           public static void excercise13() {
 // program that converts seconds to hours, minutes and seconds.
 
 
@@ -293,13 +298,6 @@ Expected output: 23:59:59
                                System.out.print( t2 + ":" + t3 + ":" + t1);
 
                                // System.out.print("/n"); // a newline in the text at this point.
-
-                           } //End main
-
-
-
-                           public static void excercise13() {
-
                        }
                    } //End class
 
@@ -309,6 +307,13 @@ class input7 {
 
         test8();
 
+
+
+       } //End main
+
+
+
+    public static void test8() {
         Scanner scan = new Scanner(System.in);
 
         int guess = 0; // variabel guess får ett värde 0.
@@ -352,13 +357,6 @@ class input7 {
         count += 1;
 
         System.out.println("Correct! You guessed " + count + " times!");
-
-       } //End main
-
-
-
-    public static void test8() {
-
     }
 } //End class
 
@@ -370,7 +368,8 @@ class dimensionalArray {
 
         test3();
 
-
+    }
+    public static void test3() {
         int[][] numbers = new int[5][5];
         numbers[0][0] = 1;
         for (int[] array : numbers) {
@@ -383,9 +382,6 @@ class dimensionalArray {
                 index++;
             }
         }
-    }
-    public static void test3() {
-
     }
 }
 
@@ -407,3 +403,13 @@ class dimensionalArray {
         }
 
  */
+
+class For_Loop_test {
+    public static void main(String[] args) {
+
+    String name = "Marek Kowalski";
+    for (int i=0; i<name.length(); i++){
+        System.out.print(name.charAt(i));
+    }
+}
+}
