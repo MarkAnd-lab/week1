@@ -69,8 +69,8 @@ import java.util.Scanner;
 // An integer called score with assigned value to it (Integer Input From the User)
 
                     System.out.print("Enter an integer: ");
-                    int number = input.nextInt();
-                    System.out.println("You entered " + number);
+                    int score = input.nextInt();
+                    System.out.println("You entered " + score);
 
                 }
 
